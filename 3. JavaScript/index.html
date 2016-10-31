@@ -9,8 +9,8 @@
 
 </head>
 <body>
-
-	<button id="textChanger">Change first div text</button>
+	<input id="myInput" type="text" value="test" />
+	<button id="textChanger">Change the text!</button>
 
 	<div id="firstDiv"> 
 		This is some text
@@ -21,6 +21,8 @@
 	<button id="textCreator">Create some text</button>
 	<div id="emptyDiv"></div>
 
+	
+
 	<script type="text/javascript">
 		// This is a comment
 		
@@ -28,8 +30,11 @@
 		This is a multi-line comment
 
 		 */
+		var newText=document.getElementById("myInput").value;
+
 		document.getElementById("textChanger").onclick=function() {
-				document.getElementById("firstDiv").innerHTML="This is awesome!";
+				newText=document.getElementById("myInput").value;
+				document.getElementById("firstDiv").innerHTML=newText;
 			}	
 
 		document.getElementById("textAppender").onclick=function() {
