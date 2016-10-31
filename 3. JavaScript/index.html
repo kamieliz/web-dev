@@ -15,6 +15,8 @@
 	<div id="firstDiv"> 
 		This is some text
 	</div>
+	<button id="changer">Change it!</button>
+	<div id="testDiv">This is some more text</div>
 
 	<button id="textAppender">Append some text</button>
 	<div id="secondDiv">Javascript is...</div>
@@ -30,6 +32,23 @@
 		This is a multi-line comment
 
 		 */
+		
+		var myArray=new Array();
+		myArray[0]="pizza";
+		myArray[1]="chocolate";
+
+		console.log(myArray); //helpful for debugging to see whats in a var
+
+		myOtherArray=["rain", "sunshine"];
+		myOtherArray.push("snow");
+		myOtherArray.splice(1, 0, "hail", "cloudy");
+		console.log(myOtherArray,length);
+
+		document.getElementById("changer").onclick=function() {
+			document.getElementById("testDiv").innerHTML=myArray[1];
+		}
+
+
 		var newText=document.getElementById("myInput").value;
 
 		document.getElementById("textChanger").onclick=function() {
