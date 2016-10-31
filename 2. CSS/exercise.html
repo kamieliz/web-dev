@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>An Exercise in CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Internal CSS -->
+    <style type="text/css">
+    div {
+        width:100px;
+        height: 100px;
+        float:left;
+        margin:20px;
+    }
+      .top {
+        float: left;
+      }
+      .red {
+        background-color: red;
+        border: 5px yellow dashed; /** adds to the width of the div */
+      }
+
+      .green {
+        background-color: green;
+        border-style: ridge solid dotted dashed;
+        border-width: 10px 5px 3px 1px;
+        border-color: green yellow blue black;
+      }
+
+      .blue {
+        background-color: blue;
+        border-radius:50px; /**creates a circle when its half the width of the div*/
+      }
+
+    </style>
+      
+</head>
+
+<body>
+  <div class="red"> </div>
+  <div class="green"> </div>
+  <div class="blue"> </div>  
+
+</body>
+</html>

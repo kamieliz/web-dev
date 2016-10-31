@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>An Exercise in CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Internal CSS -->
+    <style type="text/css">
+        .large {
+            font-size: 200%;
+        }
+
+        #green {
+            color:green;
+        }
+
+        .underline {
+            text-decoration:underline;
+        }
+
+        .bold {
+            font-weight:bold;
+        }
+
+        .bluebox {
+            background-color:blue;
+            width:200px;
+            height:200px;
+           /** position: relative;  moves things on top of each other based on z-index value or which comes first in code 
+            /** left: 100px; use the opposite instruction to move it in your direction **/
+            top:200px;
+            z-index:1;
+            margin:10px ; /** creates a border around the object (top, right, bottom, left) */
+        }
+
+        .redbox {
+            /**position: absolute;  is positioned on the page but does not affect other elements **/
+            /** fixed positioning it is fixed relative to the browser window and is not affected by scrolling */
+
+            background-color:red;
+            width:300px;
+            height:200px;
+            z-index:2;
+            padding: 10px 100px; /** adds space around the text and adds to the overall width and height of the element */
+        }
+
+        p {
+            padding: 0;
+            margin: 0; /** gets rid of default margins in p tag, but could have negative effects on readability for text */
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+      
+</head>
+
+<body>
+<div class="bluebox">
+    <p class="large">This is some text</p> <!-- classes can have many of the same ones on one page -->
+</div>
+<div class="redbox">
+    <p id="green" class="large"> This is some more text</p> <!-- ids you can only have 1 -->
+    <p>More text</p>
+    </div>
+   
+    
+
+</body>
+</html>
